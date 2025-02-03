@@ -11,6 +11,6 @@ def word_inverter(word):
     else:
         return word_inverter(word[1:]) + word[0] #pelo que entendi essa linha de codigo remove o primeiro caracter e adiciona ao final
 
-word = 'roma'
+word = 'Python'
 print(word_inverter(word)) 
 

@@ -8,3 +8,14 @@ Saída esperada:
 3
 '''
 
+def contar_caracteres(s, c):
+  
+  if not s:
+    return 0
+  
+  elif s[0] == c: 
+    return  1+  contar_caracteres(s[1:], c)
+  else:
+    return contar_caracteres(s[1:], c)
+
+print(contar_caracteres("banana", "a"))
